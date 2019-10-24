@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>BIKESAFE</title>
+    <meta name="application-name" content="Divisist2.0" lang="es">
+    <link href="https://divisist2.ufps.edu.co/assets/img/ufps/favicon.ico" rel="Shortcut icon">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="./CSS/hover-min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.10/css/AdminLTE.css" />
+    <link type="text/css" rel="stylesheet" href="./CSS/custom.css">
+    <link type="text/css" rel="stylesheet" href="./CSS/style.css">
+    <link type="text/css" rel="stylesheet" href="./CSS/noticias.css">
+    <link type="text/css" rel="stylesheet" href="./CSS/v4-shims.min.css">
+    <link type="text/css" rel="stylesheet" href="./CSS/_all-skins.min.css">
+    <link type="text/css" rel="stylesheet" href="./CSS/skin-red-light.min.css">
+    <link type="text/css" rel="stylesheet" href="./CSS/select2.min.css">
+</head>
+
+<body id="content_completw" class="skin-red-light sidebar-mini ">
+    <div class="wrapper">
+        <!--Barra superior-->
+        <header class="main-header">
+            <!-- Logo -->
+            <a href="./historial-est.html" class="logo">
+                <!-- mini logo for sidebar mini 50x50 pixels -->
+                <span class="logo-mini"><b>DS</b>2.0</span>
+                <!-- logo for regular state and mobile devices -->
+                <span class="logo-lg">ESTUDIANTES</span>
+            </a>
+            <nav class="navbar navbar-static-top" role="navigation">
+
+                <a href="./historial-est.html" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- Usuario -->
+                        <li>
+                            <a href="./index.html"><i class="fa fa-power-off"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!--Sidebar-->
+        <aside class="main-sidebar">
+            <section class="sidebar">
+                <!-- Usuario -->
+                <div class="user-panel">
+                    <div class="pull-left image">
+                        <!--CAMBIAR IMAGEN POR LA DEL ESTUDIANTE-->
+                        <img src="./Images/foto_default.JPEG" class="img-circle" alt="User Image">
+                    </div>
+                    <div class="pull-left info">
+                        <p>
+                            Nombre Estudiante </p>
+                    </div>
+                </div>
+
+                <ul class="sidebar-menu" style="min-height: 600px;">
+                    <li class="header">NAVEGACIÓN PRINCIPAL</li>
+                    <!--Encabezados principales-->
+                    <!--Informacion personal-->
+                    <li class="treeview">
+                        <a href="./historial-est.html">
+                            <i class="fa fa-user"></i><span>Información Estudiantil</span> <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                        <!--Sublista de informacion personal-->
+                        <ul class="treeview-menu">
+                            <!--Datos personales-->
+                            <li class="hvr-icon-back2">
+                                <a href="./datos.html"> Datos Personales </a>
+                            </li>
+                            <!--Normatividad-->
+                            <li class="hvr-icon-back2 ">
+                                <a href="./normatividad.html"> Normatividad </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--BikeSafe-->
+                    <li class="active treeview">
+                        <a href="./historial-est.html">
+                            <i class="fa fa-bicycle"></i> <span>Bike Safe</span> <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li class="hvr-icon-back2 ">
+                                <a class="no-padding-left" href="./solicitud-est.html">
+                                    Solicitar
+                                </a>
+                            </li>
+                            <li class="hvr-icon-back2 active">
+                                <a href="./historial-est.html"> Historial </a>
+                            </li>
+                            <li class="hvr-icon-back2 ">
+                                <a href="./bicicletas.html"> Mis Bicicletas </a>
+                            </li>
+                            <li class="hvr-icon-back2 ">
+                                <a href="./parqueos.html"> Mis Parqueos </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <!-- /.sidebar -->
+        </aside>
+
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper" style="min-height: 819px;">
+            <section class="content-header">
+                <!-- Alertas  -->
+                <div id="template_alerts">
+                </div>
+                <!-- Content Header (Page header) -->
+                <h1>
+                    Historial de BikeSafe <small>Historial de solicitudes de bicicletas</small>
+                    <span class="text-muted pull-right" style="font-size: 10px;">Martes 04 de Junio de 2019</span>
+                </h1>
+            </section>
+            <!-- Main content -->
+            <section class="content">
+                <div class="box box-primary">
+                    <div class="box-header with-border">
+                        <i class="fa fa-clock-o"></i> Solicitudes realizadas
+                    </div>
+                    <div class="box-body no-padding">
+
+                        <div class="table-responsive">
+                            <table class="table table-hover table-condensed table-striped table-bordered no-margin text-center">
+                                <thead>
+                                    <tr>
+                                        <th>Estado</th>
+                                        <th>Fecha de recibido</th>
+                                        <th>Fecha de max. de devolución</th>
+                                        <th>Fecha de devolución</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            En espera </td>
+                                        <td>
+                                        </td>
+                                        <td>
+                                        </td>
+                                        <td>
+                                        </td>
+                                    </tr>
+                                    <tr class="success">
+                                        <td>
+                                            Bici devuelta</td>
+                                        <td>
+                                            03/06/2019 </td>
+                                        <td>
+                                            30/05/2019 </td>
+                                        <td>
+                                            25/06/2019 </td>
+
+                                    </tr>
+                                    <tr class="danger">
+                                        <td>
+                                            Sanción </td>
+                                        <td>
+                                            24/05/2019 </td>
+                                        <td>
+                                            30/05/2019 </td>
+                                        <td>
+                                            31/05/2019 </td>
+
+                                    </tr>
+                                    <tr class="default">
+                                        <td>
+                                            En préstamo </td>
+                                        <td>
+                                            24/05/2019 </td>
+                                        <td>
+                                            30/05/2019 </td>
+                                        <td>
+                                        </td>
+
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </section>
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+        <footer class="main-footer">
+
+            División de Sistemas UFPS © 2016. <span class="hidden-xs">Version <b>2.0</b></span>
+
+        </footer>
+    </div>
+    <!-- ./wrapper -->
+    <script type="text/javascript" src="./JS/jQuery-2.1.3.min.jS"></script>
+    <script type="text/javascript" src="./JS/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./JS/app.min.js"></script>
+    <script type="text/javascript" src="./JS/comedor.js"></script>
+    <script type="text/javascript" src="./JS/fastclick.min.js"></script>
+    <script type="text/javascript" src="./JS/jquery.slimscroll.min.js"></script>
+    <script type="text/javascript" src="./JS/portales.js"></script>
+
+
+
+    <div style="visibility: hidden; position: absolute; width: 100%; top: -10000px; left: 0px; right: 0px; transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s; opacity: 0;">
+        <div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.5;"></div>
+        <div style="margin: 0px auto; top: 0px; left: 0px; right: 0px; position: absolute; border: 1px solid rgb(204, 204, 204); z-index: 2000000000; background-color: rgb(255, 255, 255); overflow: hidden; width: 0px; height: 0px;">
+            <iframe title="Desafío de reCAPTCHA" src="./bframe.html" name="c-ahwx7crnkttw" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" style="width: 0px; height: 0px;"></iframe></div>
+    </div>
+</body>
+
+</html>

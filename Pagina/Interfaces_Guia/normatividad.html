@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Información estudiantil Divisist 2.0</title>
+
+    <meta name="application-name" content="Divisist2.0" lang="es">
+    <link href="./Images/favicon.ico" rel="Shortcut icon">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="./CSS/hover-min.css">
+    <link type="text/css" rel="stylesheet" href="./CSS/v4-shims.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.10/css/AdminLTE.css" />
+    <link type="text/css" rel="stylesheet" href="./CSS/custom.css">
+    <link type="text/css" rel="stylesheet" href="./CSS/_all-skins.min.css">
+    <link type="text/css" rel="stylesheet" href="./CSS/skin-red-light.min.css">
+</head>
+
+<body id="content_completw" class="skin-red-light sidebar-mini ">
+    <div class="wrapper">
+        <!--Barra superior-->
+        <header class="main-header">
+            <!-- Logo -->
+            <a href="./normatividad.html" class="logo">
+                <!-- mini logo for sidebar mini 50x50 pixels -->
+                <span class="logo-mini"><b>DS</b>2.0</span>
+                <!-- logo for regular state and mobile devices -->
+                <span class="logo-lg">ESTUDIANTES</span>
+            </a>
+            <nav class="navbar navbar-static-top" role="navigation">
+
+                <a href="./normatividad.html" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- Usuario -->
+                        <li>
+                            <a href="./index.html"><i class="fa fa-power-off"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!--Sidebar-->
+        <aside class="main-sidebar">
+            <section class="sidebar">
+                <!-- Usuario -->
+                <div class="user-panel">
+                    <div class="pull-left image">
+                        <!--CAMBIAR IMAGEN POR LA DEL ESTUDIANTE-->
+                        <img src="./Images/foto_default.JPEG" class="img-circle" alt="User Image">
+                    </div>
+                    <div class="pull-left info">
+                        <p>
+                            Nombre Estudiante </p>
+                    </div>
+                </div>
+
+                <ul class="sidebar-menu" style="min-height: 600px;">
+                    <li class="header">NAVEGACIÓN PRINCIPAL</li>
+                    <!--Encabezados principales-->
+                    <!--Informacion personal-->
+                    <li class="active treeview">
+                        <a href="./normatividad.html">
+                            <i class="fa fa-user"></i><span>Información Estudiantil</span> <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                        <!--Sublista de informacion personal-->
+                        <ul class="treeview-menu">
+                            <!--Datos personales-->
+                            <li class="hvr-icon-back2">
+                                <a href="./datos.html"> Datos Personales </a>
+                            </li>
+                            <!--Normatividad-->
+                            <li class="hvr-icon-back2 active">
+                                <a href="./normatividad.html"> Normatividad </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--BikeSafe-->
+                    <li class=" treeview">
+                        <a href="./normatividad.html">
+                            <i class="fa fa-bicycle"></i> <span>Bike Safe</span> <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li class="hvr-icon-back2 ">
+                                <a class="no-padding-left" href="./solicitud-est.html">
+                                    Solicitar
+                                </a>
+                            </li>
+                            <li class="hvr-icon-back2 ">
+                                <a href="./historial-est.html"> Historial </a>
+                            </li>
+                            <li class="hvr-icon-back2 ">
+                                <a href="./bicicletas.html"> Mis Bicicletas </a>
+                            </li>
+                            <li class="hvr-icon-back2 ">
+                                <a href="./parqueos.html"> Mis Parqueos </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper" style="min-height: 808px;">
+            <section class="content-header">
+                <!-- Alertas  -->
+                <div id="template_alerts">
+                </div>
+                <!-- Content Header (Page header) -->
+                <h1>
+                    Información estudiantil <small></small>
+                    <span class="text-muted pull-right" style="font-size: 10px;">Martes 04 de Junio de 2019</span>
+                </h1>
+            </section>
+            <!-- Main content -->
+            <section class="content">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel box  box-primary">
+                            <div class="box-header with-border">
+                                <h2 class="box-title">
+                                    <i class="fa fa-book"></i> Normatividad UFPS
+                                </h2>
+                            </div>
+                            <!-- /.box-header -->
+                            <div class="box-body">
+                                <p class="text-justify">
+                                    La información contenida en este espacio pretende resolver algunas de las dudas mas comunes que puede presentar un estudiante y cuyas respuestas son soportadas por el Acuerdo estudiantil. Si lo que necesitas es una copia en pdf del Acuerdo, utiliza la
+                                    opción "Descargar Acuerdo".
+                                </p>
+                                <div class="clearfix margin">
+                                    <a href="https://divisist2.ufps.edu.co/assets/files/ufps/acuerdo065.pdf" class="btn btn-flat btn-danger pull-right" download="acuerdo065">
+                                        <i class="fa fa-file-pdf-o"></i>&nbsp; Descargar Acuerdo
+                                    </a>
+                                </div>
+                                <div class="box-group" id="accordion">
+                                    <div class="panel box box-primary">
+                                        <div class="box-header with-border">
+                                            <h4 class="box-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="./normatividad.html#collapse0">
+                                            1 - 
+                                            ¿Qué es un crédito?                                        </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse0" class="panel-collapse collapse ">
+                                            <div class="box-body text-justify">
+                                                ARTICULO 74. Se entiende por crédito, la unidad de valoración del tiempo que un estudiante debe dedicar al logro del aprendizaje e investigación de una asignatura. Se le denomina de esta manera porque la Universidad da crédito al esfuerzo que el alumno
+                                                está realizando para el logro de los objetivos educacionales tanto en la relación alumno-profesor en horas de clase teórica, tutorías presenciales o en horas prácticas supervisadas por el profesor, como
+                                                en el trabajo académico personal.
+                                                <br><br> PARÁGRAFO 1º. La valoración de la unidad crédito será el equivalente a una hora teórica o dos horas prácticas semanales; cuando hay decimales, se aproximan a la cifra superior siguiente. </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel box box-primary">
+                                        <div class="box-header with-border">
+                                            <h4 class="box-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="./normatividad.html#collapse1">
+                                            2 - 
+                                            ¿Por qué en algunos semestres no se ofertan cursos vacacionales?                                        </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse1" class="panel-collapse collapse ">
+                                            <div class="box-body text-justify">
+                                                ARTICULO 81. Se entiende por curso de vacaciones o intersemestrales los programados por la Universidad durante el período de vacaciones, comprendido entre los semestres académicos.
+                                                <br><br> PARÁGRAFO 1º. Los cursos de vacaciones solo podrán programarse cuando haya normalidad académica, esto es, cuando los semestres académicos coincidan completamente con los semestres calendario. </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel box box-primary">
+                                        <div class="box-header with-border">
+                                            <h4 class="box-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="./normatividad.html#collapse2">
+                                            3 - 
+                                            ¿Qué materias pueden ofertarse como cursos vacacionales?                                        </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse2" class="panel-collapse collapse ">
+                                            <div class="box-body text-justify">
+                                                ARTICULO 81. PARÁGRAFO 3º. Solamente las asignaturas o componentes de los Planes de Estudio de carácter teórico, correspondientes a los pénsum de cada carrera, podrán programarse como curso de vacaciones. El Director del Plan de Estudios será el responsable
+                                                de todo el proceso de implementación académico-administrativo de los citados cursos de vacaciones.
+                                                <br><br> ARTICULO 81. PARÁGRAFO 5. Las asignaturas teórico - prácticas se podrán desarrollar como cursos de vacaciones, previo concepto positivo del Consejo de Facultad, a recomendación del Comité Curricular
+                                                del Plan de Estudio. </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel box box-primary">
+                                        <div class="box-header with-border">
+                                            <h4 class="box-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="./normatividad.html#collapse3">
+                                            4 - 
+                                            ¿Cuántos tipos de exámenes se presentan en la UFPS?                                        </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse3" class="panel-collapse collapse ">
+                                            <div class="box-body text-justify">
+                                                ARTICULO 96. Los exámenes que se presentan en la Universidad se clasifican así:
+                                                <br><br> a. Previos<br> b. Finales<br> c. De Habilitación<br> d. Supletorios<br> e. Validación<br> f. Opcionales<br> g. De Concurso<br> h. De sustentación de trabajos<br> i. Sustentación de proyectos integrales<br>                                                j. De sustentación de Tesis o Trabajos de Grado
+                                                <br><br> ARTICULO 97. Los exámenes enumerados en el artículo anterior podrán ser: escritos, orales, prácticos o combinación de las formas anteriores. </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel box box-primary">
+                                        <div class="box-header with-border">
+                                            <h4 class="box-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="./normatividad.html#collapse4">
+                                            5 - 
+                                            ¿Qué es un examen previo?                                        </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse4" class="panel-collapse collapse ">
+                                            <div class="box-body text-justify">
+                                                ARTICULO 98. Se llaman exámenes previos, las pruebas que se verifican en cada semestre, antes del examen final y en las fechas señaladas en el calendario académico. Se debe efectuar al menos dos exámenes previos por semestre en cada materia. </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel box box-primary">
+                                        <div class="box-header with-border">
+                                            <h4 class="box-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="./normatividad.html#collapse5">
+                                            6 - 
+                                            ¿Qué es un examen final?                                        </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse5" class="panel-collapse collapse ">
+                                            <div class="box-body text-justify">
+                                                ARTICULO 99. Exámenes Finales son los que deben presentar los alumnos en cada una de las asignaturas teóricas y teórico - prácticas al terminar el período académico. </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel box box-primary">
+                                        <div class="box-header with-border">
+                                            <h4 class="box-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="./normatividad.html#collapse6">
+                                            7 - 
+                                            ¿Cuál es el plazo para la entrega de notas del examen final?                                        </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse6" class="panel-collapse collapse ">
+                                            <div class="box-body text-justify">
+                                                ARTICULO 115. El profesor debe dar a conocer a sus alumnos el resultado de los exámenes de fin de período dentro del término de tres (3) días hábiles siguientes a la presentación del mismo, a efectos de que se hagan las reconsideraciones a que hubiere
+                                                lugar.
+                                                <br><br> Vencido este término, el profesor deberá entregar las notas a la oficina de Admisiones y Registro Académico dentro de las veinticuatro (24) horas siguientes para la publicación oficial. </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel box box-primary">
+                                        <div class="box-header with-border">
+                                            <h4 class="box-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="./normatividad.html#collapse7">
+                                            8 - 
+                                            ¿Que proceso debo realizar si no estoy de acuerdo con la nota obtenida de un examen final?                                        </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse7" class="panel-collapse collapse ">
+                                            <div class="box-body text-justify">
+                                                ARTICULO 99. PARÁGRAFO 2º. Los exámenes finales, son susceptibles de segundo calificador nombrado por el Vicerrector Asistente de Estudios. La solicitud deberá ser presentada por el estudiante durante las cuarenta y ocho (48) horas siguientes después
+                                                de la publicación de la calificación. La nota definitiva será el promedio de las calificaciones, siempre que la nota del segundo calificador no difiera en cinco décimas o más con respecto a la primera existente
+                                                cuando esta sea inferior a 3,0; o de una unidad o más si dicha nota existente es igual o superior a 3,0; en caso contrario, se nombrará un tercer calificador y su calificación será la definitiva. </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel box box-primary">
+                                        <div class="box-header with-border">
+                                            <h4 class="box-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="./normatividad.html#collapse8">
+                                            9 - 
+                                            ¿Cuántos exámenes previos se realizan?                                        </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse8" class="panel-collapse collapse ">
+                                            <div class="box-body text-justify">
+                                                Se realizan dos exámenes previos programados en un rango de dos semanas establecidos en el calendario académico del semestre y fijados por fecha por el Plan de Estudios. Una tercera nota será el resultado de trabajos, evaluaciones o actividades realizas
+                                                por el docente que deberá ser informada a los estudiantes al momento de iniciar el curso. </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel box box-primary">
+                                        <div class="box-header with-border">
+                                            <h4 class="box-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="./normatividad.html#collapse9">
+                                            10 - 
+                                            ¿De cuánto es el plazo para entregar notas de un examen previo?                                        </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse9" class="panel-collapse collapse ">
+                                            <div class="box-body text-justify">
+                                                ARTICULO 113. Los profesores deben dar a conocer a los alumnos los resultados de los exámenes previos dentro de los ocho (8) días siguientes a la realización de los mismos. </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel box box-primary">
+                                        <div class="box-header with-border">
+                                            <h4 class="box-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="./normatividad.html#collapse10">
+                                            11 - 
+                                            ¿Qué pasa si el estudiante considera que se debe revisar nuevamente un examen previo?                                        </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse10" class="panel-collapse collapse ">
+                                            <div class="box-body text-justify">
+                                                ARTICULO 114. Dentro de los cinco (5) días hábiles siguientes de haberse dado a conocer el resultado de un examen para la obtención de nota previa, el alumno podrá solicitar al profesor de la materia la revisión de la calificación respectiva.<br><br>                                                PARÁGRAFO 1º. Cuando un profesor se negare a revisar la evaluación previa, el alumno recurrirá al Director del Plan de Estudios respectivo para solicitarla. </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel box box-primary">
+                                        <div class="box-header with-border">
+                                            <h4 class="box-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="./normatividad.html#collapse11">
+                                            12 - 
+                                            ¿Qué pasa cuando es aceptada la calificación de un examen previo por parte del estudiante?                                        </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse11" class="panel-collapse collapse ">
+                                            <div class="box-body text-justify">
+                                                ARTICULO 114. PARÁGRAFO 2º. Una vez aceptada la calificación el profesor debe devolver el examen previo al estudiante. </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel box box-primary">
+                                        <div class="box-header with-border">
+                                            <h4 class="box-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="./normatividad.html#collapse12">
+                                            13 - 
+                                            ¿Qué es un examen de habilitación y cuándo pueden ser presentados por un estudiante?                                        </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse12" class="panel-collapse collapse ">
+                                            <div class="box-body text-justify">
+                                                ARTICULO 100. Se llaman exámenes de habilitación, aquellos que pueda presentar el alumno que haya obtenido en cualquier asignatura teórica o teórico - práctica un cómputo final inferior a 3,0 pero igual o mayor a 2,0.<br><br>                                                PARÁGRAFO 1º. Los exámenes de habilitación deberán ser escritos y presentarse en las fechas estipuladas.<br><br> PARÁGRAFO 2º. No habrá segunda habilitación, por lo tanto el alumno que la pierda, deberá
+                                                repetir la materia. </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel box box-primary">
+                                        <div class="box-header with-border">
+                                            <h4 class="box-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="./normatividad.html#collapse13">
+                                            14 - 
+                                            ¿En qué materias se permiten exámenes de habilitación?                                        </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse13" class="panel-collapse collapse ">
+                                            <div class="box-body text-justify">
+                                                ARTICULO 100. PARÁGRAFO 3º. Las materias prácticas no son habilitables. Por lo tanto, el alumno que pierda cualquiera de las asignaturas consideradas como tales, deberá repetirla. </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel box box-primary">
+                                        <div class="box-header with-border">
+                                            <h4 class="box-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="./normatividad.html#collapse14">
+                                            15 - 
+                                            ¿Qué pasa si un estudiante no presenta un examen previo en la fecha establecida por el Plan de Estudios (Examen supletorio)?                                        </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse14" class="panel-collapse collapse ">
+                                            <div class="box-body text-justify">
+                                                ARTICULO 101. Exámenes Supletorios son aquellos que se presentan en fecha distinta a la señalada oficialmente, cuando por causa justificada se le autoriza al alumno, que no pudo presentarse en la fecha indicada, siempre que la solicitud se presente dentro
+                                                de los tres (3) días siguientes a la fecha de realizada la prueba.<br><br> ARTICULO 102. Solo habrá examen supletorio, para los exámenes previos o de final
+                                                de período.<br><br> PARÁGRAFO. El profesor de la asignatura será autónomo para realizar el examen supletorio de nota previa. Los supletorios de exámenes finales los autorizará el Director del Plan de Estudios.
+                                                <br><br> ARTICULO 103. El alumno debe presentar el examen supletorio en la fecha fijada para ello por la respectiva autoridad.<br><br> PARÁGRAFO. El incumplimiento de esta disposición implica la calificación
+                                                de cero, cero (0, 0). </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel box box-primary">
+                                        <div class="box-header with-border">
+                                            <h4 class="box-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="./normatividad.html#collapse15">
+                                            16 - 
+                                            ¿Qué pasa si el estudiante falta más del 80% de las clases de una materia?                                        </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse15" class="panel-collapse collapse ">
+                                            <div class="box-body text-justify">
+                                                ARTICULO 104. El estudiante presencial deberá asistir al menos al 80% de las horas programadas para las asignaturas o componentes del plan de estudios teórico - práctica y prácticas. El incumplimiento de esta norma sin causa justificada ocasionará la
+                                                pérdida del derecho a la calificación en la tercera evaluación de las asignaturas teórico - prácticas.<br><br> En el caso de las asignaturas prácticas causará
+                                                la pérdida de la materia. En el caso de asignaturas netamente teóricas, el profesor reconocerá la asistencia y participación del estudiante como uno de los elementos evaluativos para el cálculo de la tercera
+                                                nota. </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel box box-primary">
+                                        <div class="box-header with-border">
+                                            <h4 class="box-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="./normatividad.html#collapse16">
+                                            17 - 
+                                            ¿Qué pasa si un docente no puede efectuar algún examen?                                        </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse16" class="panel-collapse collapse ">
+                                            <div class="box-body text-justify">
+                                                ARTICULO 104. PARAGRAFO 1º, En caso de que por fuerza mayor no pueda ser efectuada o calificada por el profesor responsable de la asignatura, una de pruebas de que hable el presente Artículo, el Vicerrector Asistente de Estudios designará su reemplazo.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel box box-primary">
+                                        <div class="box-header with-border">
+                                            <h4 class="box-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="./normatividad.html#collapse17">
+                                            18 - 
+                                            ¿Puede un docente evaluar una materia en compañía de otro docente?                                        </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse17" class="panel-collapse collapse ">
+                                            <div class="box-body text-justify">
+                                                ARTICULO 104. PARÁGRAFO 2º. Un profesor podrá solicitar colaboración de otro docente para la vigilancia de una prueba académica, cuando las circunstancias así lo exijan. </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel box box-primary">
+                                        <div class="box-header with-border">
+                                            <h4 class="box-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="./normatividad.html#collapse18">
+                                            19 - 
+                                            ¿Qué es un examen de validación? ¿Cuántas asignaturas se pueden validar por semestre?                                        </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse18" class="panel-collapse collapse ">
+                                            <div class="box-body text-justify">
+                                                ARTICULO 105. Exámenes de validación son aquellos que se presentan en ocasiones extraordinarias, previa autorización del Consejo de Facultad en los siguientes casos:<br><br> a. Para reconocer cursos aprobados
+                                                en otras universidades que no han sido aceptadas por esta Universidad.<br> b. Para comprobar la idoneidad en materias en que el alumno no disponga de créditos universitarios, pero sí de los conocimientos
+                                                requeridos.
+                                                <br><br> PARÁGRAFO 1º. Solamente se podrán validar dos asignaturas por semestre académico.<br><br> PARÁGRAFO 2º. Para validar una asignatura se debe haber cumplido con los requisitos establecidos en el plan
+                                                de estudios.<br><br> PARÁGRAFO 3º. Los exámenes de validación se efectuarán con antelación a la matrícula académica del estudiante. </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel box box-primary">
+                                        <div class="box-header with-border">
+                                            <h4 class="box-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="./normatividad.html#collapse19">
+                                            20 - 
+                                            ¿Cuáles asignaturas no se pueden validar?                                        </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse19" class="panel-collapse collapse ">
+                                            <div class="box-body text-justify">
+                                                ARTICULO 106. Las asignaturas teóricas reprobadas no son validables.<br><br> ARTICULO 107. Las asignaturas prácticas no son validables.<br><br> ARTICULO 108. Los exámenes de validación no tienen habilitaciones
+                                                ni supletorios.<br><br> </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel box box-primary">
+                                        <div class="box-header with-border">
+                                            <h4 class="box-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="./normatividad.html#collapse20">
+                                            21 - 
+                                            ¿Cuál es la nota mínima requerida para aprobar un examen de validación?                                        </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse20" class="panel-collapse collapse ">
+                                            <div class="box-body text-justify">
+                                                ARTICULO 109. El examen de validación debe ser oral y escrito y para su aprobación se requiere una nota no inferior a cuatro, cero (4,0). </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel box box-primary">
+                                        <div class="box-header with-border">
+                                            <h4 class="box-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="./normatividad.html#collapse21">
+                                            22 - 
+                                            ¿Qué pasa si se reprueba un examen de validación?                                        </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse21" class="panel-collapse collapse ">
+                                            <div class="box-body text-justify">
+                                                ARTICULO 109. PARÁGRAFO. El alumno que no obtuviere la nota de que trata el presente Artículo, o a quien no se presente en la fecha y hora fijada para el examen, se le considerará la asignatura como reprobada. En su registro académico, se le hará la anotación
+                                                como no aprobada por validación y para efectos del promedio ponderado acumulado no se tendrá en cuenta esta calificación. </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel box box-primary">
+                                        <div class="box-header with-border">
+                                            <h4 class="box-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="./normatividad.html#collapse22">
+                                            23 - 
+                                            ¿Qué proceso debe realizar el estudiante si aprueba una materia y desea mejorar la calificación obtenida (Examen opcional)?                                        </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse22" class="panel-collapse collapse ">
+                                            <div class="box-body text-justify">
+                                                ARTICULO 111. Exámenes opcionales son los que presentan aquellos estudiantes que hayan aprobado la asignatura y que deseen mejorar sus calificaciones y su promedio acumulado ponderado.<br><br> PARÁGRAFO
+                                                1º. Los exámenes opcionales serán programados simultáneamente con la habilitación de la materia. </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel box box-primary">
+                                        <div class="box-header with-border">
+                                            <h4 class="box-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="./normatividad.html#collapse23">
+                                            24 - 
+                                            ¿Tienen algún costo los exámenes opcionales?                                        </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse23" class="panel-collapse collapse ">
+                                            <div class="box-body text-justify">
+                                                ARTICULO 111. PARÁGRAFO 2º. El valor de los exámenes opcionales tendrá el mismo costo de las habilitaciones. </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel box box-primary">
+                                        <div class="box-header with-border">
+                                            <h4 class="box-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="./normatividad.html#collapse24">
+                                            25 - 
+                                            ¿Cómo se calcula la nota de un examen opcional?                                        </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse24" class="panel-collapse collapse ">
+                                            <div class="box-body text-justify">
+                                                ARTICULO 112. La nota definitiva de la asignatura en caso de hacer examen opcional se obtendrá así:<br><br> a. Si el estudiante pierde el examen opcional, la nota definitiva será el promedio aritmético de
+                                                la nota definitiva obtenida y la nota del examen opcional.<br> b. Si el estudiante aprueba el examen opcional la nota definitiva será la mayor. </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel box box-primary">
+                                        <div class="box-header with-border">
+                                            <h4 class="box-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="./normatividad.html#collapse25">
+                                            26 - 
+                                            ¿De quién es la responsabilidad de calificar los exámenes?                                        </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse25" class="panel-collapse collapse ">
+                                            <div class="box-body text-justify">
+                                                ARTICULO 116. La calificación es la expresión de las evaluaciones que el profesor o profesores de la Universidad hacen del rendimiento académico individual de cada estudiante en una asignatura; por lo tanto, corresponde al profesor o profesores o a la
+                                                Universidad asignar dicha calificación en todo curso o actividad académica programada formalmente en la institución.
+                                                <br><br> PARÁGRAFO 2º. En ningún caso el profesor delegará en un monitor o asistente no docente la responsabilidad para asignar calificación a los estudiantes. </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel box box-primary">
+                                        <div class="box-header with-border">
+                                            <h4 class="box-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="./normatividad.html#collapse26">
+                                            27 - 
+                                            ¿Cómo funcionan las aproximaciones por centésimas en las notas?                                        </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse26" class="panel-collapse collapse ">
+                                            <div class="box-body text-justify">
+                                                ARTICULO 118. PARÁGRAFO 1º. Para efectos de aproximaciones, las centésimas 1, 2, 3 y 4 se desprecian y las centésimas 5, 6, 7, 8 y 9 se aproximan a la décima siguiente. </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel box box-primary">
+                                        <div class="box-header with-border">
+                                            <h4 class="box-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="./normatividad.html #collapse27">
+                                            28 - 
+                                            ¿Qué acciones debe tomar un docente en caso de fraude en un examen?                                        </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse27" class="panel-collapse collapse ">
+                                            <div class="box-body text-justify">
+                                                ARTICULO 118. PARÁGRAFO 2º. En los casos de fraude, el profesor deberá presentar un informe al Director del Plan de Estudios con copia a la Facultad a la que pertenece dicho plan, para que con base en el debido proceso se impongan las sanciones correspondientes.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel box box-primary">
+                                        <div class="box-header with-border">
+                                            <h4 class="box-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="./normatividad.html#collapse28">
+                                            29 - 
+                                            ¿Qué requisitos existen para presentar examen final?                                        </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse28" class="panel-collapse collapse ">
+                                            <div class="box-body text-justify">
+                                                ARTICULO 122. Para tener derecho al examen final de una asignatura es necesario que el estudiante haya presentado por lo menos uno de los exámenes previos oficiales fijados por calendario académico. </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel box box-primary">
+                                        <div class="box-header with-border">
+                                            <h4 class="box-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="./normatividad.html#collapse29">
+                                            30 - 
+                                            ¿Cómo se calcula la calificación final para una materia?                                        </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse29" class="panel-collapse collapse ">
+                                            <div class="box-body text-justify">
+                                                ARTICULO 119. La calificación final para una asignatura se obtiene así:<br><br> a. En caso de materias teórico - prácticas, se calificarán independientemente la parte teórica y la parte práctica y la calificación
+                                                final será el promedio de las dos evaluaciones.<br> b. En las materias teóricas o teórico - prácticas, el 70% corresponderá a la nota previa definitiva y el 30% al examen final. En el caso de las asignaturas
+                                                consideradas como proyecto, si no se realizan notas previas, la nota definitiva será la de la sustentación final.<br> c. En las materias netamente prácticas, la calificación será el promedio de las notas
+                                                previas y final si las hubiere. La calificación final no puede valer más del 30%. Esta última no tiene carácter de examen final para ningún efecto.<br><br> PARÁGRAFO 1º. La calificación final definitiva
+                                                de una asignatura es la obtenida, pasado el examen de habilitación u opcional si los hubiere.<br><br> PARÁGRAFO 2º. Las materias prácticas no son habilitables. </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- /.box-body -->
+                        </div>
+                        <!-- /.box -->
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
+            </section>
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+
+        <footer class="main-footer">
+
+            División de Sistemas UFPS © 2016. <span class="hidden-xs">Version <b>2.0</b></span>
+        </footer>
+    </div>
+    <!-- ./wrapper -->
+    <script type="text/javascript" src="./JS/jQuery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="./JS/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./JS/app.min.js"></script>
+    <script type="text/javascript" src="./JS/portales.js"></script>
+
+
+
+</body>
+
+</html>

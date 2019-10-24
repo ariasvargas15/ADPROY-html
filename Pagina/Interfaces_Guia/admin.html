@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Divisist 2.0</title>
+    <meta name="application-name" content="Divisist2.0" lang="es">
+    <link href="./Images/favicon.ico" rel="Shortcut icon">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="./CSS/hover-min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.10/css/AdminLTE.css" />
+    <link type="text/css" rel="stylesheet" href="./CSS/custom.css">
+    <link type="text/css" rel="stylesheet" href="./CSS/style.css">
+    <link type="text/css" rel="stylesheet" href="./CSS/noticias.css">
+</head>
+
+<body class="login-page">
+    <div class="login-box2">
+        <!--Banner principal-->
+        <div class="login-logo no-margin">
+            <img class="img-responsive center-block" src="./Images/logo_admin.png">
+        </div>
+        <!--Login-->
+        <div class="login-box-body">
+            <div id="template_alerts"></div>
+            <p class="login-box-msg">Ingresa tus datos para iniciar sesión</p>
+            <form id="form_login" role="form" method="POST" accept-charset="utf-8">
+                <!--Codigo-->
+                <div class="form-group has-feedback">
+                    <input type="text" class="form-control" placeholder="Código" name="usuario" maxlength="7" value="" required="required">
+                    <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                </div>
+                <!--Documento-->
+                <div class="form-group has-feedback">
+                    <input type="text" onblur="presiono(this)" onfocus="esta(this)" class="form-control" onchange="cambio(this)" placeholder="Documento" id="documento" name="documento" maxlength="12" value="" required="required">
+                    <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                </div>
+                <!--Contraseña-->
+                <div class="form-group has-feedback">
+                    <input type="password" class="form-control" placeholder="Contraseña" name="password" maxlength="32" required="required">
+                    <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                </div>
+                <div class="row">
+                    <br>
+                    <!--Iniciar sesion-->
+                    <div class="col-xs-12 center-block">
+                        <button type="submit" class="btn btn-danger btn-block btn-flat">Iniciar Sesión</button>
+                    </div>
+                    <div class="col-xs-12 center-block" style="margin-top: 20px;">
+                        <a style="color:#d9534f;" tabindex="0" href="#" data-toggle="popover" data-trigger="focus" title="<b>¿Olvidaste tu clave?</b>" data-content="<p class = 'text-justify'>El proceso de restablecimiento de clave se debe realizar cuando se ha olvidado o aún no tiene una clave asignada, para ambos casos se le enviará un email al correo institucional y/o el correo personal registrado en el sistema.<br><br> En caso de no tener acceso a los mismos, debe dirigirse a la oficina de Admisiones y Registro Académico y actualizar sus datos personales.</p>"
+                            data-placement="top" data-html="true">
+                            <i class="fa fa-question-circle" title="Ayuda"></i>
+                        </a>
+                        <!--Cambio de contraseña-->
+                        <a href="#" class="text-danger" data-toggle="modal" title="Reestablecer o crear por primera vez la clave." data-target="#myModalTutorialCambioClave">¿Olvidaste tu clave?
+                            <i class="fa fa-book"></i>
+                        </a>
+                        <!--Boton noticias-->
+                        <a href="https://divisist2.ufps.edu.co/#" class="cd-btn text-danger pull-right">
+                            <i class="fa fa-newspaper-o hvr-buzz-out"></i>Noticias
+                        </a>
+                    </div>
+                    <div class="col-xs-12 center-block" style="margin-top: 20px;"></div>
+                </div>
+            </form>
+            <section>
+                <div class="row login-links">
+                    <!--Boton Vigilante-->
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <a class=" " href="./vigilante.html" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Vigilante">
+                            <div class="text-center">
+                                <span aria-hidden="true" class="text-danger icon-key icon hvr-grow fa-2x"></span>
+                            </div>
+                        </a>
+                    </div>
+                    <!--Boton Estudiante-->
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <a href="./index.html" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Estudiante">
+                            <div class="text-center">
+                                <span aria-hidden="true" class="text-danger icon-notebook icon hvr-grow fa-2x"></span>
+                            </div>
+                        </a>
+                    </div>
+                    <!--Boton docente-->
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <a href="https://docentes.ufps.edu.co/" data-toggle="tooltip" data-placement="bottom" data-original-title="Docente">
+                            <div class="text-center">
+                                <span aria-hidden="true" class="icon-user icon hvr-grow fa-2x text-danger"></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!--Noticias-->
+            <div class="cd-panel from-left">
+                <header class="cd-panel-header">
+                    <h1><i class="fa fa-newspaper-o"></i> Noticias Académicas</h1>
+                    <a href="#" class="cd-panel-close">Close</a>
+                </header>
+                <div class="cd-panel-container">
+                    <div class="cd-panel-content">
+                        <p style="border-bottom: 1px solid #DD4B39; color: #DD4B39; font-size: 14px; font-weight: bold;">
+                            <span class="glyphicon glyphicon-chevron-right"></span> Consultas Correo Electrónico
+                        </p>
+                        <p style="color: #DD4B39; font-size: 10px;"><i class="fa fa-calendar"></i> Publicado, 29-FEB-16 - Divisist
+                        </p>
+                        <p style="font-size: 14px; text-align: justify">Presente sus solicitudes justificadas y consultas a través del correo <b>consulta.estudiante@ufps.edu.co.</b><br><b>Nota:</b> Recuerde identificarse correctamente (Nombre completo y codigo).
+                        </p>
+                        <br>
+                        <p style="border-bottom: 1px solid #DD4B39; color: #DD4B39; font-size: 14px; font-weight: bold;">
+                            <span class="glyphicon glyphicon-chevron-right"></span> Comunicaciones UFPS
+                        </p>
+                        <ul class="users-list clearfix">
+                            <!--Noticia 1-->
+                            <li>
+                                <a class="users-list-name" target="_blank" href="https://youtu.be/0vaiPbjmxyU"><img src="./Images/d028a900560448ce479977558596a45f.jpg" alt="User Image">
+                                    <p style="font-size: 14px;">Magazín Siente la U</p>
+                                </a>
+                                <span style="text-align: left;" class="users-list-date"><i class="fa fa-calendar"></i>
+                                    Publicado, 03-ENE-18 - Cecom
+                                    <p style="text-align: justify; font-size: 12px;">
+                                        Disfruten de tres nuevos temas UFPS en el Magazín "Siente La U" * Vida,
+                                        trayectoria y compromiso institucional de 3 docentes UFPS *Ceremonía de
+                                        Imposición de símbolos, programa de Enfermería. *Dos deportistas UFPS obtuvieron
+                                        medalla de Oro y Bronce en los Juegos ASCUN, fase regional.
+                                    </p>
+                                </span>
+                            </li>
+                            <!--Noticia 2-->
+                            <li>
+                                <a class="users-list-name" target="_blank" href="https://issuu.com/ufps/docs/siente_la_u_acreditaci_n_edici_n_1.">
+                                    <img src="./Images/ff005cbe30f328c3953519c8879c4a75.jpg" alt="User Image">
+                                    <p style="font-size: 14px;">Boletín Siente la U</p>
+                                </a>
+                                <span style="text-align: left;" class="users-list-date">
+                                    <i class="fa fa-calendar"></i> Publicado, 02-ENE-18 - Cecom
+                                    <p style="text-align: justify; font-size: 12px;">
+                                        Boletín Interno Siente la U Acreditación - N° 01 de 2019
+                                    </p>
+                                </span>
+                            </li>
+                        </ul>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./JS/jQuery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="./JS/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./JS/app.min.js"></script>
+    <script type="text/javascript" src="./JS/sesion_google.js"></script>
+    <script type="text/javascript" src="./JS/popover_main.js"></script>
+    <script type="text/javascript" src="./JS/main.min.js"></script>
+    <script type="text/javascript" src="./JS/one.app.min.js"></script>
+    <script type="text/javascript" src="./JS/jquery.backstretch.min.js"></script>
+    <script type="text/javascript" src="./JS/login.min.js"></script>
+    <div class="backstretch" style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 778px; width: 1440px; z-index: -999999; position: fixed;">
+        <img src="./Images/19a.jpg" style="position: absolute; margin: 0px; padding: 0px; border: none; width: 1440px; height: 1080px; max-width: none; z-index: -999999; left: 0px; top: -151px;">
+    </div>
+</body>
+
+</html>
