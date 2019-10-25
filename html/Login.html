@@ -18,21 +18,14 @@
     <link type="text/css" rel="stylesheet" href="./CSS/custom.css">
     <link type="text/css" rel="stylesheet" href="./CSS/style.css">
     <link type="text/css" rel="stylesheet" href="./CSS/noticias.css">
+    <link type="text/css" rel="stylesheet" href="./CSS/login.css">
 </head>
-<style>
-    .Borde {
-        border-top: 0;
-        border-right: 0;
-        border-left: 0;
-        width: 100%;
-    }
-</style>
 
 <body class="login-page">
     <div class="login-box2">
         <!--Banner principal-->
         <div class="login-logo no-margin">
-            <img class="img-responsive center-block" src="./Images/Bannere.png">
+            <img class="img-responsive center-block" src="./Images/BannerPeq.png">
         </div>
         <!--Login-->
         <div class="login-box-body">
@@ -55,12 +48,32 @@
                     <span class="glyphicon glyphicon-lock form-control-feedback"></span>
                 </div>
                 <!--Rol-->
+                <br>
                 <div class="form-group has-feedback" style="display:flex;">
-                    <select id="Documento" class="Borde" name="Tipo Documento" default=" Seleccionar">
-                      <option value="Docente">Docente</option> 
-                      <option value="Estudiante">Estudiante</option>
-                      <option value="Coordinador">Coordinador</option>
-                    </select>
+                    <!--Boton Docente-->
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <a class=" " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Docente">
+                            <div class="text-center">
+                                <span aria-hidden="true" class="text-danger icon-people icon hvr-grow fa-3x"></span>
+                            </div>
+                        </a>
+                    </div>
+                    <!--Boton Estudiante-->
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <a data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Estudiante">
+                            <div class="text-center">
+                                <span aria-hidden="true" class="text-danger icon-notebook icon hvr-grow fa-3x"></span>
+                            </div>
+                        </a>
+                    </div>
+                    <!--Boton Coordinador del comité-->
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <a data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Coordinador">
+                            <div class="text-center">
+                                <span aria-hidden="true" class="text-danger icon-user-following icon hvr-grow fa-3x"></span>
+                            </div>
+                        </a>
+                    </div>
                 </div>
                 <div class="row">
                     <br>
@@ -88,79 +101,6 @@
                     <div class="col-xs-12 center-block" style="margin-top: 20px;"></div>
                 </div>
             </form>
-            <!-- <section>
-                <div class="row login-links">
-                    <Boton Coordinador del Comité
-            <div class="col-md-6 col-sm-6 col-xs-6">
-                <a href="./admin.html" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Coordinador del comité">
-                    <div class="text-center">
-                        <span aria-hidden="true" class="text-danger icon-user-following icon hvr-grow fa-2x"></span>
-                    </div>
-                </a>
-            </div>
-            Boton docente
-            <div class="col-md-6 col-sm-6 col-xs-6">
-                <a href="https://docentes.ufps.edu.co/" data-toggle="tooltip" data-placement="bottom" data-original-title="Docente">
-                    <div class="text-center">
-                        <span aria-hidden="true" class="text-danger icon-people icon hvr-grow fa-2x "></span>
-                    </div>
-                </a>
-            </div>
-        </div> 
-        </section>  -->
-            <!--Noticias-->
-            <div class="cd-panel from-left">
-                <header class="cd-panel-header">
-                    <h1><i class="fa fa-newspaper-o"></i> Noticias Académicas</h1>
-                    <a href="#" class="cd-panel-close">Close</a>
-                </header>
-                <div class="cd-panel-container">
-                    <div class="cd-panel-content">
-                        <p style="border-bottom: 1px solid #DD4B39; color: #DD4B39; font-size: 14px; font-weight: bold;">
-                            <span class="glyphicon glyphicon-chevron-right"></span> Consultas Correo Electrónico
-                        </p>
-                        <p style="color: #DD4B39; font-size: 10px;"><i class="fa fa-calendar"></i> Publicado, 29-FEB-16 - Divisist
-                        </p>
-                        <p style="font-size: 14px; text-align: justify">Presente sus solicitudes justificadas y consultas a través del correo <b>consulta.estudiante@ufps.edu.co.</b><br><b>Nota:</b> Recuerde identificarse correctamente (Nombre completo y codigo).
-                        </p>
-                        <br>
-                        <p style="border-bottom: 1px solid #DD4B39; color: #DD4B39; font-size: 14px; font-weight: bold;">
-                            <span class="glyphicon glyphicon-chevron-right"></span> Comunicaciones UFPS
-                        </p>
-                        <ul class="users-list clearfix">
-                            <!--Noticia 1-->
-                            <li>
-                                <a class="users-list-name" target="_blank" href="https://youtu.be/0vaiPbjmxyU"><img src="./Images/d028a900560448ce479977558596a45f.jpg" alt="User Image">
-                                    <p style="font-size: 14px;">Magazín Siente la U</p>
-                                </a>
-                                <span style="text-align: left;" class="users-list-date"><i class="fa fa-calendar"></i>
-                                    Publicado, 03-ENE-18 - Cecom
-                                    <p style="text-align: justify; font-size: 12px;">
-                                        Disfruten de tres nuevos temas UFPS en el Magazín "Siente La U" * Vida,
-                                        trayectoria y compromiso institucional de 3 docentes UFPS *Ceremonía de
-                                        Imposición de símbolos, programa de Enfermería. *Dos deportistas UFPS obtuvieron
-                                        medalla de Oro y Bronce en los Juegos ASCUN, fase regional.
-                                    </p>
-                                </span>
-                            </li>
-                            <!--Noticia 2-->
-                            <li>
-                                <a class="users-list-name" target="_blank" href="https://issuu.com/ufps/docs/siente_la_u_acreditaci_n_edici_n_1.">
-                                    <img src="./Images/ff005cbe30f328c3953519c8879c4a75.jpg" alt="User Image">
-                                    <p style="font-size: 14px;">Boletín Siente la U</p>
-                                </a>
-                                <span style="text-align: left;" class="users-list-date">
-                                    <i class="fa fa-calendar"></i> Publicado, 02-ENE-18 - Cecom
-                                    <p style="text-align: justify; font-size: 12px;">
-                                        Boletín Interno Siente la U Acreditación - N° 01 de 2019
-                                    </p>
-                                </span>
-                            </li>
-                        </ul>
-                        <br>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
     <script type="text/javascript" src="./JS/jQuery-2.1.3.min.js"></script>
@@ -173,7 +113,7 @@
     <script type="text/javascript" src="./JS/jquery.backstretch.min.js"></script>
     <script type="text/javascript" src="./JS/login.min.js"></script>
     <div class="backstretch" style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 778px; width: 1440px; z-index: -999999; position: fixed;">
-        <img src="./Images/bg1.jpg" style="position: absolute; margin: 0px; padding: 0px; border: none; width: 1440px; height: 1080px; max-width: none; z-index: -999999; left: 0px; top: -151px;">
+        <img src="./Images/fondo3.jpg" style="position: absolute; margin: 0px; padding: 0px; border: none; width: 1440px; height: 1080px; max-width: none; z-index: -999999; left: 0px; top: -151px;">
     </div>
 </body>
 
