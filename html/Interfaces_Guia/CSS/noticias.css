@@ -1,0 +1,13 @@
+.users-list>li img {
+    border-radius: 0% !important;
+    max-width: 100%;
+    height: auto;
+}
+.users-list>li {
+    width: 33.3%;
+    padding: 5px;
+}
+.users-list-date {
+    color: #DD4B39 !important;
+    font-size: 10px !important;
+}

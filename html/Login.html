@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Type" content="text/html;" charset="utf-8">
     <title>Divisist 2.0</title>
     <meta name="application-name" content="Divisist2.0" lang="es">
     <link href="./Images/favicon.ico" rel="Shortcut icon">
@@ -20,13 +20,14 @@
     <link type="text/css" rel="stylesheet" href="./CSS/noticias.css">
 </head>
 <style>
-  .Borde{
-  border-top:0;
-  border-right:0;
-  border-left:0;	
-  width:100%;
- }
+    .Borde {
+        border-top: 0;
+        border-right: 0;
+        border-left: 0;
+        width: 100%;
+    }
 </style>
+
 <body class="login-page">
     <div class="login-box2">
         <!--Banner principal-->
@@ -40,18 +41,26 @@
             <form id="form_login" role="form" method="POST" accept-charset="utf-8">
                 <!--Codigo-->
                 <div class="form-group has-feedback">
-                    <input class="Borde" type="text" class="form-control" placeholder="Código" name="usuario" maxlength="7" value="" required="required">
+                    <input class="Borde" type="text" class="form-control" placeholder=" Código" name="usuario" maxlength="7" value="" required="required">
                     <span class="glyphicon glyphicon-user form-control-feedback"></span>
                 </div>
                 <!--Documento-->
                 <div class="form-group has-feedback">
-                    <input class="Borde" type="text" onblur="presiono(this)" onfocus="esta(this)" class="form-control" onchange="cambio(this)" placeholder="Documento" id="documento" name="documento" maxlength="12" value="" required="required">
+                    <input class="Borde" type="text" onblur="presiono(this)" onfocus="esta(this)" class="form-control" onchange="cambio(this)" placeholder=" Documento" id="documento" name="documento" maxlength="12" value="" required="required">
                     <span class="glyphicon glyphicon-user form-control-feedback"></span>
                 </div>
                 <!--Contraseña-->
                 <div class="form-group has-feedback">
-                    <input class="Borde" type="password" class="form-control" placeholder="Contraseña" name="password" maxlength="32" required="required">
+                    <input class="Borde" type="password" class="form-control" placeholder=" Contraseña" name="password" maxlength="32" required="required">
                     <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                </div>
+                <!--Rol-->
+                <div class="form-group has-feedback" style="display:flex;">
+                    <select id="Documento" class="Borde" name="Tipo Documento" default=" Seleccionar">
+                      <option value="Docente">Docente</option> 
+                      <option value="Estudiante">Estudiante</option>
+                      <option value="Coordinador">Coordinador</option>
+                    </select>
                 </div>
                 <div class="row">
                     <br>
@@ -59,39 +68,46 @@
                     <div class="col-xs-12 center-block">
                         <button type="submit" class="btn btn-danger btn-block btn-flat">Iniciar Sesión</button>
                     </div>
-                    <div class="col-xs-12 center-block" style="margin-top: 20px; diplay:block;">
-                        <a style="color:#d9534f;" tabindex="0" href="#" data-toggle="popover" data-trigger="focus" title="<b>¿Olvidaste tu clave?</b>" data-content="<p class = 'text-justify'>El proceso de restablecimiento de clave se debe realizar cuando se ha olvidado o aún no tiene una clave asignada, para ambos casos se le enviará un email al correo institucional y/o el correo personal registrado en el sistema.<br><br> En caso de no tener acceso a los mismos, debe dirigirse a la oficina de Admisiones y Registro Académico y actualizar sus datos personales.</p>"
-                            data-placement="top" data-html="true">
+
+                    <!--Olvidar clave-->
+                    <div class="col-xs-12 center-block" style="margin-top: 20px; display:block;">
+                        <a style="color:#d9534f;" tabindex="0" href="#" data-toggle="popover" data-trigger="focus" title="<b>¿Olvidaste tu clave?</b>" data-placement="top" data-html="true">
                             <i class="fa fa-question-circle" title="Ayuda"></i>
                         </a>
-                       
-                        <!--Cambio de contraseña-->
                         <a href="#" class="text-danger" data-toggle="modal" title="Reestablecer o crear por primera vez la clave." data-target="#myModalTutorialCambioClave">¿Olvidaste tu clave?
+                        </a>
+                    </div>
+                    <!--Registrarse-->
+                    <div class="col-xs-12 center-block" style="margin-top: 20px; display:block;">
+                        <a style="color:#d9534f;" tabindex="0" href="#" data-toggle="popover" data-trigger="focus" title="<b>¿Ya estás registrado?</b>" data-placement="top" data-html="true">
+                            <i class="fa fa-check-square" title="Ayuda"></i>
+                        </a>
+                        <a href="#" class="text-danger" data-toggle="modal" title="Reestablecer o crear por primera vez la clave." data-target="#myModalTutorialCambioClave">Registrarse
                         </a>
                     </div>
                     <div class="col-xs-12 center-block" style="margin-top: 20px;"></div>
                 </div>
             </form>
-            <section>
+            <!-- <section>
                 <div class="row login-links">
-                    <!--Boton Administrador-->
-                    <div class="col-md-4 col-sm-4 col-xs-4">
-                        <a href="./admin.html" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Administrador">
-                            <div class="text-center">
-                                <span aria-hidden="true" class="text-danger icon-settings icon hvr-grow fa-2x"></span>
-                            </div>
-                        </a>
+                    <Boton Coordinador del Comité
+            <div class="col-md-6 col-sm-6 col-xs-6">
+                <a href="./admin.html" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Coordinador del comité">
+                    <div class="text-center">
+                        <span aria-hidden="true" class="text-danger icon-user-following icon hvr-grow fa-2x"></span>
                     </div>
-                    <!--Boton docente-->
-                    <div class="col-md-4 col-sm-4 col-xs-4">
-                        <a href="https://docentes.ufps.edu.co/" data-toggle="tooltip" data-placement="bottom" data-original-title="Docente">
-                            <div class="text-center">
-                                <span aria-hidden="true" class="icon-user icon hvr-grow fa-2x text-danger"></span>
-                            </div>
-                        </a>
+                </a>
+            </div>
+            Boton docente
+            <div class="col-md-6 col-sm-6 col-xs-6">
+                <a href="https://docentes.ufps.edu.co/" data-toggle="tooltip" data-placement="bottom" data-original-title="Docente">
+                    <div class="text-center">
+                        <span aria-hidden="true" class="text-danger icon-people icon hvr-grow fa-2x "></span>
                     </div>
-                </div>
-            </section>
+                </a>
+            </div>
+        </div> 
+        </section>  -->
             <!--Noticias-->
             <div class="cd-panel from-left">
                 <header class="cd-panel-header">

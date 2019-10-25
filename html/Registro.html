@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;" charset="utf-8">
+    <title>Divisist 2.0</title>
+    <meta name="application-name" content="Divisist2.0" lang="es">
+    <link href="./Images/favicon.ico" rel="Shortcut icon">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="./CSS/hover-min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.10/css/AdminLTE.css" />
+    <link type="text/css" rel="stylesheet" href="./CSS/custom.css">
+    <link type="text/css" rel="stylesheet" href="./CSS/style.css">
+    <link type="text/css" rel="stylesheet" href="./CSS/noticias.css">
+</head>
+<style>
+    .Borde {
+        border-top: 0;
+        border-right: 0;
+        border-left: 0;
+    }
+    
+    #Codigo {
+        width: 45%;
+    }
+    
+    #Documento {
+        height: 34px;
+        margin-right: 10px;
+        width: 52%;
+    }
+</style>
+
+<body class="login-page">
+    <div class="login-box2">
+        <!--Banner principal-->
+        <div class="login-logo no-margin">
+            <img class="img-responsive center-block" src="./Images/Bannere.png">
+        </div>
+        <!--Login-->
+        <div class="login-box-body">
+            <div id="template_alerts"></div>
+            <!--<p class="login-box-msg">Ingresa tus datos para iniciar sesión</p>-->
+            <form id="form_login" role="form" method="POST" accept-charset="utf-8">
+                <!--Tipo de documento-->
+                <div class="form-group has-feedback" style="display:flex;">
+                    <select id="Documento" class="Borde" name="Tipo Documento">
+                        <option value="C.C">C.C</option> 
+                        <option value="C.E">C.E</option>
+                        <option value="T.P">T.P</option>
+                    </select>
+                    <!--Documento-->
+                    <input id="Documento" class="Borde" type="text" class="form-control" placeholder="Documento" name="usuario" maxlength="7" value="" required="required">
+                </div>
+                <!--Nombre-->
+                <div class="form-group has-feedback">
+                    <input class="Borde" style="width:100%" type="text" class="form-control" placeholder="Nombre" id="documento" name="Nombre" maxlength="12" value="" required="required">
+                </div>
+                <!--Apellido-->
+                <div class="form-group has-feedback">
+                    <input class="Borde" style="width:100%" type="text" class="form-control" placeholder="Apellido" id="documento" name="Apellido" maxlength="12" value="" required="required">
+                </div>
+                <!--Email-->
+                <div class="form-group has-feedback">
+                    <input class="Borde" style="width:100%" type="text" class="form-control" placeholder="Email" id="documento" name="Email" maxlength="12" value="" required="required">
+                </div>
+                <!--Contraseña-->
+                <div class="form-group has-feedback">
+                    <input class="Borde" style="width:100%" type="text" class="form-control" placeholder="Contraseña" id="documento" name="Contraseña" maxlength="12" value="" required="required">
+                </div>
+                <!--Contraseña Confirmar-->
+                <div class="form-group has-feedback">
+                    <input class="Borde" style="width:100%" type="text" class="form-control" placeholder="Confirmar Contraseña" id="documento" name="Confirmar Contraseña" maxlength="12" value="" required="required">
+                </div>
+                <br>
+                <div class="form-group has-feedback" style="display:flex;">
+                    <!--Boton Docente-->
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <a class=" " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Docente">
+                            <div class="text-center">
+                                <span aria-hidden="true" class="text-danger icon-people icon hvr-grow fa-3x"></span>
+                            </div>
+                        </a>
+                    </div>
+                    <!--Boton Estudiante-->
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <a data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Estudiante">
+                            <div class="text-center">
+                                <span aria-hidden="true" class="text-danger icon-notebook icon hvr-grow fa-3x"></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <br>
+                <div class="form-group has-feedback" style="display:flex;">
+                    <select id="Documento" class="Borde" name="Dependecia">
+                    <option value="Dependecia">Dependecia</option> 
+                 </select>
+                    <input id="Codigo" class="Borde" type="text" class="form-control" placeholder="Código" name="usuario" maxlength="7" value="" required="required">
+                </div>
+                <div class="row">
+                    <br>
+                    <!--Iniciar sesion-->
+                    <div class="col-xs-12 center-block">
+                        <button type="submit" class="btn btn-danger btn-block btn-flat">Iniciar Sesión</button>
+                    </div>
+
+                    <div class="col-xs-12 center-block" style="margin-top: 20px;"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="./JS/jQuery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="./JS/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./JS/app.min.js"></script>
+    <script type="text/javascript" src="./JS/sesion_google.js"></script>
+    <script type="text/javascript" src="./JS/popover_main.js"></script>
+    <script type="text/javascript" src="./JS/main.min.js"></script>
+    <script type="text/javascript" src="./JS/one.app.min.js"></script>
+    <script type="text/javascript" src="./JS/jquery.backstretch.min.js"></script>
+    <script type="text/javascript" src="./JS/login.min.js"></script>
+    <div class="backstretch" style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 778px; width: 1440px; z-index: -999999; position: fixed;">
+        <img src="./Images/bg1.jpg" style="position: absolute; margin: 0px; padding: 0px; border: none; width: 1440px; height: 1080px; max-width: none; z-index: -999999; left: 0px; top: -151px;">
+    </div>
+</body>
+
+</html>
