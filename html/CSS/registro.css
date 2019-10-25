@@ -1,0 +1,15 @@
+.Borde {
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+}
+
+#Codigo {
+    width: 45%;
+}
+
+#Documento {
+    height: 34px;
+    margin-right: 10px;
+    width: 52%;
+}
