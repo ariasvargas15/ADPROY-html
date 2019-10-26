@@ -1,0 +1,240 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Información Estudiantil</title>
+
+    <meta name="application-name" content="Divisist2.0" lang="es">
+    <link href="./Images/favicon.ico" rel="Shortcut icon">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="./CSS/hover-min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.10/css/AdminLTE.css" />
+    <link type="text/css" rel="stylesheet" href="./CSS/custom.css">
+    <link type="text/css" rel="stylesheet" href="./CSS/_all-skins.min.css">
+    <link type="text/css" rel="stylesheet" href="./CSS/skin-red-light.min.css">
+</head>
+<style>
+.col{
+ background-color:#5983D9;
+ color:#fff;
+}
+.row{
+ margin-right:0px;
+ margin-left:0px;
+}
+#Documento2{
+ width:43%;
+ margin-left:4%;
+ height:40px;
+}
+.Borde{
+ border-top:0;
+ border-right:0;
+ border-left:0;
+}
+</style>
+<body id="content_completw" class="skin-red-light sidebar-mini ">
+    <div class="wrapper">
+        <!--Barra superior-->
+        <header class="main-header">
+            <!-- Logo -->
+            <a href="./lista.html" class="logo">
+                <!-- mini logo for sidebar mini 50x50 pixels -->
+                <span class="logo-mini"><b>DS</b>2.0</span>
+                <!-- logo for regular state and mobile devices -->
+                <span class="logo-lg">ESTUDIANTE</span>
+            </a>
+            <nav class="navbar navbar-static-top" role="navigation">
+
+                <a href="./lista.html" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- Usuario -->
+                        <li>
+                            <a href="./admin.html"><i class="fa fa-power-off"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!--Sidebar-->
+        <aside class="main-sidebar">
+            <section class="sidebar">
+                <!-- Usuario -->
+                <div class="user-panel">
+                    <div class="pull-left image">
+                        <!--CAMBIAR IMAGEN POR LA DEL ESTUDIANTE-->
+                        <img src="./Images/foto_default.JPEG" class="img-circle" alt="User Image">
+                    </div>
+                    <div class="pull-left info">
+                        <p>
+                            Nombre Administrador </p>
+                    </div>
+                </div>
+
+                <ul class="sidebar-menu" style="min-height: 600px;">
+                    <li class="header">NAVEGACIÓN PRINCIPAL</li>
+                    <!--Encabezados principales-->
+                    <!--Informacion personal-->
+                    <li class="treeview">
+                        <a href="./lista.html">
+                            <i class="fa fa-user"></i><span>Información Personal</span> <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                        <!--Sublista de informacion personal-->
+                        <ul class="treeview-menu">
+                            <!--Datos personales-->
+                            <li class="hvr-icon-back2">
+                                <a href="./datos-administrador.html"> Datos Personales </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--Listado de estudiantes-->
+                    <li class=" active treeview">
+                        <a href="./lista.html">
+                            <i class="fa fa-users"></i><span>Gestion de Proyectos</span> <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                        <!--Sublista de informacion personal-->
+                        <ul class="treeview-menu">
+                            <!--Datos personales-->
+                            <li class="hvr-icon-back2 active">
+                                <a href="./lista.html"> Listado de Proyectos</a>
+                            </li>
+                            <li class="hvr-icon-back2 active">
+                                <a href="./lista.html">Subir anteproyecto</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--BikeSafe-->
+                    <li class="active treeview">
+                        <a href="./lista.html">
+                            <i class="fa fa-bicycle"></i> <span>Cronograma</span> <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li class="hvr-icon-back2">
+                                <a class="no-padding-left" href="./solicitud-adm.html">
+                                    Seguimiento del Comite
+                                </a>
+                            </li>
+                           <li class="hvr-icon-back2">
+                                <a class="no-padding-left" href="./solicitud-adm.html">
+                                    Seguimiento del Director
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper" style="min-height: 819px;">
+            <section class="content-header">
+                <!-- Alertas  -->
+                <div id="template_alerts">
+                </div>
+                <!-- Content Header (Page header) -->
+                <h1>
+                    Subir Anteproyecto<small>Informacion basica del anteproyecto</small>
+                    <span class="text-muted pull-right" style="font-size: 10px;">Martes 04 de Junio de 2019</span>
+                </h1>
+            </section>
+<!-- Main content -->
+            <section class="content">
+                <div class="box box-primary">
+                    <div class="box-header with-border">
+                        <i class="fa fa-edit"></i> Datos del Anteproyecto
+                    </div>
+<!-- Listado de los proyectos #1BA67E-->
+ <div class="box-body no-padding">
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th class="col" scope="col">#</th>
+      <th class="col" scope="col">Titulo</th>
+      <th class="col" scope="col">Resumen</th>
+      <th class="col" scope="col">Autores</th>
+      <th class="col" scope="col">Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td style="width:30%;">
+        <button id="bajar" class="btn btn-primary"><i class="fa fa-download"></i><i>Descargar</i></button>
+        <button id="subir" class="btn btn-primary" data-toggle="modal" data-target="#registrar" ><i class="fa fa-user-circle"></i><i>Asignar Jurados</i></button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+                    </div>
+            </section>
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+        <footer class="main-footer">
+
+            División de Sistemas UFPS © 2016. <span class="hidden-xs">Version <b>2.0</b></span>
+        </footer>
+    </div>
+    <!-- ./wrapper -->
+    <script type="text/javascript" src="./JS/jQuery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="./JS/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./JS/app.min.js"></script>
+    <script type="text/javascript" src="./JS/portales.js"></script>
+
+ <div class="modal fade" id="registrar" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color:#dd4b39;">
+                     <a class="fa fa-power-off" data-dismiss="modal" style="color:#fff; float:right; cursor:pointer;"></a>
+                </div>
+                
+               <div class="row" style="margin:2% auto;">
+                  <div class="col-sm-6 col-md-12">
+                    <div class="thumbnail" style="background-color:#188F6C;padding:0px;">
+                    <div class="row" style="min-height:70px; background-color:#149076;">
+                  </div>
+               <div class="caption" style="background-color:#fff; margin:15px 0px 15px 0px; height:300%;">
+               <div class="clearfix text-center">
+                     <h3>Thumbnail label</h3>
+                     <i class="fa fa-edit"></i> Cantidad de Jurados
+                                   <select id="Documento2" class="Borde" name="Tipo Documento">
+                                      <option value="1">1</option> 
+                                      <option value="2">2</option>
+                                      <option value="3">3</option>
+                                   </select>
+                     <hr style="border-bottom-style: dotted; border-bottom-width: 4px;">
+                        <input class="Borde" style="width:100%; padding:2%;" type="text" class="form-control" placeholder="Jurados" id="documento" name="Email" maxlength="12" value="" required="required">
+                        <input class="Borde" style="width:100%; padding:2%;" type="text" class="form-control" placeholder="Jurados" id="documento" name="Email" maxlength="12" value="" required="required">
+                        <input class="Borde" style="width:100%; padding:2%;" type="text" class="form-control" placeholder="Jurados" id="documento" name="Email" maxlength="12" value="" required="required">
+                        <input class="Borde" style="width:100%; padding:2%;" type="text" class="form-control" placeholder="Jurados" id="documento" name="Email" maxlength="12" value="" required="required">
+                        <input class="Borde" style="width:100%; padding:2%;" type="text" class="form-control" placeholder="Jurados" id="documento" name="Email" maxlength="12" value="" required="required">
+                        <input class="Borde" style="width:100%; padding:2%;" type="text" class="form-control" placeholder="Jurados" id="documento" name="Email" maxlength="12" value="" required="required">
+             
+                     <p><a href="#" class="btn btn-default" style="background-color:#188F6C;color:#fff; margin-top:20px;" role="button">Button</a></p>
+               </div>
+               </div>
+               </div>
+           </div>
+        </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
