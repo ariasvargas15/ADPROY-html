@@ -23,8 +23,46 @@
     <link type="text/css" rel="stylesheet" href="./CSS/listado.css">
 </head>
 <style>
-.row{margin-left:0px; margin-right:0px;}
+    .row {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    #datos1 {
+        width: 99%;
+        margin: 1% auto;
+    }
+    
+    .Borde {
+        border-top: 0;
+        border-right: 0;
+        border-left: 0;
+    }
+    
+    #Documento {
+        width: 98%;
+        height: 50px;
+        margin: 2% auto;
+    }
+    
+    #Documento1 {
+        width: 98%;
+        height: 40px;
+        margin: 1% auto;
+    }
+    
+    #Documento2 {
+        width: 43%;
+        margin-left: 4%;
+        height: 40px;
+    }
+    
+    .row {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
 </style>
+
 <body id="content_completw" class="skin-red-light sidebar-mini ">
     <div class="wrapper">
         <!--Barra superior-->
@@ -134,7 +172,6 @@
                     <div class="box-header with-border">
                         <i class="fa fa-edit"></i> Estado del proyecto actual
                     </div>
-                    <!-- Small boxes (Stat box) -->
                     <div class="row">
 
                         <!--DIRECTOR-->
@@ -160,7 +197,7 @@
                             <div class="small-box bg-green">
                                 <div class="inner">
                                     <h3><i class="fa fa-check-circle"></i></h3>
-                                    <p>Jurados Asignados</p>
+                                    <p>Asignación de Jurados</p>
                                 </div>
                                 <div class="icon">
                                     <i class="fa fa-users"></i>
@@ -202,7 +239,15 @@
                         </div>
                         <!-- ./col -->
                     </div>
-                    <!-- /.row -->
+                </div>
+
+                <!-- /.row -->
+                <div class="box box-primary">
+                    <div class="box-header with-border">
+                        <i class="fa fa-book"></i> Mis proyectos
+                    </div>
+                    <!-- Small boxes (Stat box) -->
+
 
                     <!-- Listado de los proyectos -->
                     <div class="box-body no-padding">
@@ -214,8 +259,9 @@
                                         <th style="width:35%;">Titulo</th>
                                         <th style="width:20%;">Director</th>
                                         <th style="width:15%;">Estado</th>
-                                        <th>-</th>
-                                        <th>-</th>
+                                        <th style="width:10%;">-</th>
+                                        <th style="width:10%;">-</th>
+                                        <th style="width:10%;">-</th>
 
                                     </tr>
                                 </thead>
@@ -224,70 +270,185 @@
                                         <td style="text-align: justify;"> Aplicativo web para la administración de los anteproyectos presentados en el programa de Ingeniería de Sistemas de la Universidad Francisco de Paula Santander "ADPROY"</td>
                                         <td>Judith del Pilar Rodriguez Tenjo</td>
                                         <td>Aprobado</td>
-                                        <td style="width:15%;" colspan="2">
-                                            <button id="bajar" class="btn btn-primary"><i class="fa fa-download"></i><i>Descargar</i></button>
+                                        <td>
+                                            <button id="bajar" class="btn btn-info"><i class="fa fa-download"></i><i>Descargar</i></button>
                                         </td>
-                                        <td style="width:15%;" colspan="2">
-                                            <button id="subir" class="btn btn-primary" class="btn btn-primary" data-toggle="modal" data-target="#registrar"><i class="fa fa-upload"></i><i>Adjuntar</i></button>
+                                        <td>
+                                            <button id="bajar" class="btn btn-warning" data-toggle="modal" data-target="#editar"><i class="fa fa-edit"></i><i>Editar</i></button>
+                                        </td>
+                                        <td>
+                                            <button id="subir" class="btn btn-success" data-toggle="modal" data-target="#registrar">
+                                                <i class="fa fa-send"></i><i>Enviar</i></button>
                                         </td>
                                     </tr>
                                     <tr class="active">
                                         <td>Plan de gestion TIC de la empresa Minas La Aurora SAS</td>
                                         <td>Marco Antonio Adarme Jaimes<br>Nelly Rossana Diaz Leal</td>
                                         <td> Cancelado</td>
-                                        <td style="width:15%;  " colspan="2">
-                                            <button id="bajar" class="btn btn-primary"><i class="fa fa-download"></i><i>Descargar</i></button>
+                                        <td>
+                                            <button id="bajar" class="btn btn-info"><i class="fa fa-download"></i><i>Descargar</i></button>
                                         </td>
-                                        <td style="width:15%;" colspan="2"> -
-                                        </td>
+                                        <td>-</td>
+                                        <td>-</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
-
-                </div>
             </section>
             <!-- /.content -->
-        </div>
-        <!-- /.content-wrapper -->
-        <footer class="main-footer">
-
-            División de Sistemas UFPS © 2016. <span class="hidden-xs">Version <b>2.0</b></span>
-        </footer>
-    </div>
-    <!-- ./wrapper -->
-    <script type="text/javascript" src="./JS/jQuery-2.1.3.min.js"></script>
-    <script type="text/javascript" src="./JS/bootstrap.min.js"></script>
-    <script type="text/javascript" src="./JS/app.min.js"></script>
-    <script type="text/javascript" src="./JS/portales.js"></script>
-
- <div class="modal fade" id="registrar" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header" style="background-color:#dd4b39;">
-                     <a class="fa fa-power-off" data-dismiss="modal" style="color:#fff; float:right; cursor:pointer;"></a>
-                </div>
-                
-               <div class="row" style="margin:2% auto;">
-                  <div class="col-sm-6 col-md-12">
-                    <div class="thumbnail" style="background-color:#188F6C;padding:0px;">
-                    <div class="row" style="min-height:70px; background-color:#149076;">
-                  </div>
-               <div class="caption" style="background-color:#fff; margin:15px 0px 15px 0px; height:300%;">
-               <div class="clearfix text-center">
-                     <h3>Adjuntar Archivos</h3>
-                     <hr style="border-bottom-style: dotted; border-bottom-width: 4px;">
-                      
-                     <p><a href="#" class="btn btn-default" style="background-color:#188F6C;color:#fff; margin-top:20px;" role="button">Button</a></p>
-               </div>
-               </div>
-               </div>
-           </div>
-        </div>
             </div>
+            <!-- /.content-wrapper -->
+            <footer class="main-footer">
+
+                División de Sistemas UFPS © 2016. <span class="hidden-xs">Version <b>2.0</b></span>
+            </footer>
         </div>
-    </div>
+        <!-- ./wrapper -->
+        <script type="text/javascript" src="./JS/jQuery-2.1.3.min.js"></script>
+        <script type="text/javascript" src="./JS/bootstrap.min.js"></script>
+        <script type="text/javascript" src="./JS/app.min.js"></script>
+        <script type="text/javascript" src="./JS/portales.js"></script>
+
+        <!--Modal Editar-->
+        <div class="modal fade" id="editar" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color:#dd4b39;">
+                        <a class="fa fa-remove" data-dismiss="modal" style="color:#fff; float:right; cursor:pointer;"></a>
+                    </div>
+
+                    <div class="row" style="margin:2% auto;">
+                        <div class="col-sm-12 col-md-12">
+                            <div class="thumbnail" style="background-color:#188F6C;padding:0px;">
+                                <div class="row" style="min-height:30px; background-color:#149076;">
+                                </div>
+                                <div class="caption" style="background-color:#fff; margin:15px 0px 15px 0px; height:300%;">
+                                    <section class="content">
+                                        <div class="box box-primary">
+                                            <div class="box-header with-border">
+                                                <i class="fa fa-book"></i> Editar datos del anteproyecto
+                                            </div>
+                                            <!-- Listado de los proyectos -->
+                                            <div class="box-body no-padding">
+                                                <div class="row">
+                                                    <div class="col-md-7">
+                                                        <textarea id="datos1" class="form-control" rows="3" placeholder="Titulo" style="height: 50px;"></textarea>
+                                                        <textarea id="datos1" class="form-control" rows="3" placeholder="Resumen"></textarea>
+                                                    </div>
+                                                    <div class="col-md-5">
+                                                        <div class="row">
+                                                            <select id="Documento" class="Borde" name="Tipo Documento">
+                                                          <option value="C.C">Linea de Investigación</option> 
+                                                          <option value="C.E">C.E</option>
+                                                          <option value="T.P">T.P</option>
+                                                      </select>
+                                                        </div>
+                                                        <div class="row">
+                                                            <select id="Documento1" class="Borde" name="Tipo Documento">
+                                                          <option value="C.C">Grupo de Investigación</option> 
+                                                          <option value="C.E">C.E</option>
+                                                          <option value="T.P">T.P</option>
+                                                      </select>
+                                                            <select id="Documento1" class="Borde" name="Tipo Documento">
+                                                          <option value="C.C">Modalidad</option> 
+                                                          <option value="C.E">C.E</option>
+                                                          <option value="T.P">T.P</option>
+                                                      </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="box-header with-border" style="text-align: center;">
+                                                    <i class="fa fa-users"></i> Informacion de los autores
+
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-7">
+                                                        <i class="fa fa-user-plus"></i> Autores
+                                                        <select id="Documento2" class="Borde" name="Tipo Documento">
+                                                                      <option value="1">1</option> 
+                                                                      <option value="2">2</option>
+                                                                      <option value="3">3</option>
+                                                                   </select>
+                                                    </div>
+                                                    <div class="col-md-5">
+                                                        <i class="fa fa-legal"></i> Directores
+                                                        <select id="Documento2" class="Borde" name="Tipo Documento">
+                                                                      <option value="1">1</option> 
+                                                                      <option value="2">2</option>
+                                                                      <option value="3">3</option>
+                                                                   </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Listado de los proyectos -->
+                                            <div class="box-body no-padding">
+                                                <div class="row" style="margin:2% auto;">
+                                                    <div class="col-md-8">
+                                                        <input class="Borde" style="width:100%; padding:1%;" type="text" class="form-control" placeholder="Autores" id="documento" name="Email" maxlength="12" value="" required="required">
+                                                        <input class="Borde" style="width:100%; padding:1%;" type="text" class="form-control" placeholder="Autores" id="documento" name="Email" maxlength="12" value="" required="required">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <input class="Borde" style="width:100%; padding:2%;" type="text" class="form-control" placeholder="Jurados" id="documento" name="Email" maxlength="12" value="" required="required">
+                                                        <input class="Borde" style="width:100%; padding:2%;" type="text" class="form-control" placeholder="Jurados" id="documento" name="Email" maxlength="12" value="" required="required">
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+
+                                            <!--Botones-->
+                                            <div class="clearfix text-center">
+                                                <div class="box-footer">
+                                                    <div>
+                                                        <button id="bajar" class="btn btn-primary" style="margin-top: 5%; width: 200px; margin-right: 5%;"><i class="fa fa-hdd-o"></i><i>Actualizar información</i></button>
+
+                                                        <button id="bajar" class="btn btn-danger" style="margin-top: 5%; width: 200px;"><i class="fa fa-trash"></i><i>Cancelar anteproyecto</i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </section>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end modal editar-->
+
+            <!--Modal registrar-->
+            <div class="modal fade" id="registrar" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header" style="background-color:#dd4b39;">
+                            <a class="fa fa-remove" data-dismiss="modal" style="color:#fff; float:right; cursor:pointer;"></a>
+                        </div>
+
+                        <div class="row" style="margin:2% auto;">
+                            <div class="col-sm-12 col-md-12">
+                                <div class="thumbnail" style="background-color:#188F6C;padding:0px;">
+                                    <div class="row" style="min-height:30px; background-color:#149076;">
+                                    </div>
+                                    <div class="caption" style="background-color:#fff; margin:15px 0px 15px 0px; height:300%;">
+                                        <div class="clearfix text-center">
+                                            <h3>Adjuntar Archivos</h3>
+                                            <hr style="border-bottom-style: dotted; border-bottom-width: 4px;">
+                                            <div>
+                                                <button id="bajar" class="btn btn-primary " style="margin-top: 5%; width: 180px; margin-right: 5%;"><i class="fa fa-hdd-o"></i><i>Guardar sin enviar</i></button>
+
+                                                <button id="bajar" class="btn btn-success" style="margin-top: 5%; width: 180px;"><i class="fa fa-share"></i><i>Enviar al comité</i></button>
+                                            </div>
+                                            <br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 </body>
 
