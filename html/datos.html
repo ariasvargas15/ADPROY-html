@@ -3,12 +3,12 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Información estudiantil Divisist 2.0</title>
+    <title>ADPROY</title>
 
-    <meta name="application-name" content="Divisist2.0" lang="es">
+    <meta name="application-name" content="ADPROY" lang="es">
     <link href="./Images/favicon.ico" rel="Shortcut icon">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
@@ -20,6 +20,9 @@
     <link type="text/css" rel="stylesheet" href="./CSS/custom.css">
     <link type="text/css" rel="stylesheet" href="./CSS/_all-skins.min.css">
     <link type="text/css" rel="stylesheet" href="./CSS/skin-red-light.min.css">
+    <link type="text/css" rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="./CSS/listado.css">
+
 </head>
 
 <body id="content_completw" class="skin-red-light sidebar-mini ">
@@ -31,7 +34,7 @@
                 <!-- mini logo for sidebar mini 50x50 pixels -->
                 <span class="logo-mini"><b>DS</b>2.0</span>
                 <!-- logo for regular state and mobile devices -->
-                <span class="logo-lg">ESTUDIANTES</span>
+                <span class="logo-lg">ESTUDIANTE</span>
             </a>
             <nav class="navbar navbar-static-top" role="navigation">
 
@@ -42,7 +45,7 @@
                     <ul class="nav navbar-nav">
                         <!-- Usuario -->
                         <li>
-                            <a href="./index.html"><i class="fa fa-power-off"></i></a>
+                            <a href="./admin.html"><i class="fa fa-power-off"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -69,7 +72,7 @@
                     <!--Informacion personal-->
                     <li class="active treeview">
                         <a href="./datos.html">
-                            <i class="fa fa-user"></i><span>Información Estudiantil</span> <i class="fa fa-angle-left pull-right"></i>
+                            <i class="fa fa-user"></i><span>Información Personal</span> <i class="fa fa-angle-left pull-right"></i>
                         </a>
                         <!--Sublista de informacion personal-->
                         <ul class="treeview-menu">
@@ -77,31 +80,34 @@
                             <li class="hvr-icon-back2 active">
                                 <a href="./datos.html"> Datos Personales </a>
                             </li>
-                            <!--Normatividad-->
-                            <li class="hvr-icon-back2 ">
-                                <a href="./normatividad.html"> Normatividad </a>
+                        </ul>
+                    </li>
+                    <!--Gestion de poyectos-->
+                    <li class="treeview">
+                        <a href="./datos.html">
+                            <i class="fa fa-book"></i><span>Gestión de Proyectos</span> <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                        <!--Sublista de gestion de proyectos-->
+                        <ul class="treeview-menu">
+                            <li class="hvr-icon-back2">
+                                <a href="#"> Listado de Proyectos</a>
+                            </li>
+                            <li class="hvr-icon-back2">
+                                <a href="">Subir anteproyecto</a>
                             </li>
                         </ul>
                     </li>
-                    <!--BikeSafe-->
-                    <li class=" treeview">
+                    <!--Cronograma-->
+                    <li class="treeview">
                         <a href="./datos.html">
-                            <i class="fa fa-bicycle"></i> <span>Bike Safe</span> <i class="fa fa-angle-left pull-right"></i>
+                            <i class="	fa fa-calendar-check-o"></i> <span>Cronograma</span> <i class="fa fa-angle-left pull-right"></i>
                         </a>
                         <ul class="treeview-menu">
-                            <li class="hvr-icon-back2 ">
-                                <a class="no-padding-left" href="./solicitud-est.html">
-                                    Solicitar
-                                </a>
+                            <li class="hvr-icon-back2">
+                                <a href=""> Seguimiento del Comité</a>
                             </li>
-                            <li class="hvr-icon-back2 ">
-                                <a href="./historial-est.html"> Historial </a>
-                            </li>
-                            <li class="hvr-icon-back2 ">
-                                <a href="./bicicletas.html"> Mis Bicicletas </a>
-                            </li>
-                            <li class="hvr-icon-back2 ">
-                                <a href="./parqueos.html"> Mis Parqueos </a>
+                            <li class="hvr-icon-back2">
+                                <a href=""> Seguimiento del Director</a>
                             </li>
                         </ul>
                     </li>
@@ -138,49 +144,61 @@
                                 <img src="./Images/foto_default.JPEG" class="user-image img-circle img-thumbnail" alt="User Image" style="max-width: 200px;max-height: 200px;">
                             </div>
                         </div>
+                        <!--Datos personales-->
                         <div class="col-md-9">
                             <div class="table-responsive">
-                                <table class="table table-hover table-striped table-condensed table-bordered">
+                                <table class="table table-hover table-striped table-bordered">
                                     <tbody>
                                         <tr>
+                                            <th style="width: 45%;">Programa</th>
+                                            <td style="width: 55%;">Ingeniería de Sistemas</td>
+                                        </tr>
+                                        <tr>
                                             <th>Codigo</th>
-                                            <td>ACA VA EL CODIGO</td>
+                                            <td>1150000</td>
                                         </tr>
                                         <tr>
                                             <th>Tipo documento</th>
-                                            <td>ACA VA EL TIPO DE DOCUMENTO</td>
+                                            <td>C.C.</td>
                                         </tr>
                                         <tr>
                                             <th>Documento</th>
-                                            <td>ACA VA EL DOCUMENTO</td>
+                                            <td>1090909909</td>
                                         </tr>
                                         <tr>
                                             <th>Nombres</th>
-                                            <td>ACA VAN LOS NOMBRES</td>
+                                            <td>KAREN BRIGID</td>
                                         </tr>
                                         <tr>
                                             <th>Apellidos</th>
-                                            <td>ACA LOS APPELLIDOS</td>
+                                            <td>BELTRÁN VERA</td>
                                         </tr>
                                         <tr>
                                             <th>Celular</th>
-                                            <td>EL CELULAR PAL WHATSAPP</td>
+                                            <td>3120099009</td>
                                         </tr>
                                         <tr>
                                             <th>Dirección</th>
-                                            <td>ACA VA DONDE VIVE</td>
+                                            <td>Calle 19 No. 23A-45 Centro</td>
                                         </tr>
                                         <tr>
-                                            <th>Correo Electrónico</th>
-                                            <td>ACA VA EL CORREO</td>
+                                            <th>Correo electrónico</th>
+                                            <td>thisismyemail@gmail.com</td>
                                         </tr>
                                         <tr>
-                                            <th>Nombre de Carrera</th>
-                                            <td>ACA VA LO QUE ESTUDIA</td>
+                                            <th>Correo electrónico institucional</th>
+                                            <td>thisismyemail@ufps.edu.co</td>
                                         </tr>
+
                                     </tbody>
                                 </table>
                             </div>
+                            <!--Boton actualizar informacion-->
+                            <div id="subir" class="clearfix text-right box-footer">
+                                <button class="btn btn-warning" data-toggle="modal" data-target="#upload_info">
+                                    <i class="fa fa-edit"></i><i>Actualizar datos de contacto</i></button>
+                            </div>
+                            <br>
                         </div>
                     </div>
                 </div>
@@ -199,6 +217,81 @@
     <script type="text/javascript" src="./JS/app.min.js"></script>
     <script type="text/javascript" src="./JS/portales.js"></script>
 
+    <!--Modal Editar-->
+    <div class="modal fade" id="upload_info" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color:#dd4b39;">
+                    <a class="fa fa-remove" data-dismiss="modal" style="color:#fff; float:right; cursor:pointer;"></a>
+                </div>
+
+                <div class="row" style="margin:0%;">
+                    <div class="col-sm-12 col-md-12" style="padding-right: 0px; padding-left: 0px;">
+                        <div style="background-color:rgb(241, 240, 240);">
+
+                            <div class="caption" style="background-color:rgb(241, 240, 240); margin: 0px 0px 0px 0px; height:250%;">
+                                <section class="content">
+                                    <div class="box box-primary">
+                                        <div class="box-header with-border">
+                                            <i class="fa fa-pencil-square-o"></i> Actualizar datos de contacto
+                                        </div>
+                                        <form>
+                                            <!-- Listado de los proyectos -->
+                                            <div class="box-body no-padding">
+
+                                                <div class="row" style="text-align: left;">
+                                                    <div class="col-md-6">
+                                                        <div style="padding: 5%;"> <i class="fa fa-mobile-phone"></i>
+                                                            <strong>Celular</strong>
+                                                        </div>
+                                                        <div style="padding: 5%;"> <i class=" fa fa-home "></i>
+                                                            <strong>Dirección</strong>
+                                                        </div>
+                                                        <div style="padding: 5%;"> <i class="fa fa-envelope"></i>
+                                                            <strong>Correo electrónico</strong>
+                                                        </div>
+                                                        <div style="padding: 5%;"> <i class="fa fa-lock"></i>
+                                                            <strong>Digite su contraseña</strong>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div>
+                                                            <div style="padding: 4%;">
+                                                                <input class="Borde" style="width:100%;" type="text" class="form-control" placeholder="3109090909" id="celular" name="Celular" maxlength="12" value="" required="required">
+                                                            </div>
+                                                            <div style="padding: 4%;">
+                                                                <input class="Borde" style="width:100%;" type="text" class="form-control" placeholder="Calle 23 No. 15A-56 La Playa" id="direccion" name="Direccion" maxlength="12" value="" required="required">
+                                                            </div>
+                                                            <div style="padding: 4%;">
+                                                                <input class="Borde" style="width:100%;" type="text" class="form-control" placeholder="thisismyemail@gmail.com" id="email" name="Email" maxlength="12" value="" required="required">
+                                                            </div>
+                                                            <div style="padding: 4%;">
+                                                                <input class="Borde" style="width:100%;" type="password" class="form-control" placeholder="Contraseña" id="password" name="Password" maxlength="12" value="" required="required">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Listado de los proyectos -->
+
+                                            <!--Botones-->
+                                            <div class="clearfix text-center box-footer">
+
+                                                <button id="bajar" class="btn btn-primary" style="margin-top: 5%; width: 200px;"><i class="fa fa-hdd-o"></i><i>Actualizar información</i></button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end modal editar-->
 
 
 </body>
