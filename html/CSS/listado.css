@@ -7,6 +7,40 @@
     padding: 5px;
 }
 
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#datos1 {
+    width: 99%;
+    margin: 1% auto;
+}
+
+.Borde {
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+}
+
+#Documento {
+    width: 98%;
+    height: 50px;
+    margin: 2% auto;
+}
+
+#Documento1 {
+    width: 98%;
+    height: 40px;
+    margin: 1% auto;
+}
+
+#Documento2 {
+    width: 43%;
+    margin-left: 4%;
+    height: 40px;
+}
+
 
 /* #bajar {
  background-color: rgb(199, 196, 41);
